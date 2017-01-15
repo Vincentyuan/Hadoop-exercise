@@ -35,9 +35,9 @@ public class FileJoin {
  //     		String [] list = tokens.nextToken().split(" ");
       	//	Context temp = new Context();
       	//	temp.write(list[0],"r");
-		String first = tokens.nextToken();
-		String second  = tokens.nextToken();
-    System.out.println(" "+second+" "+first);
+      		String first = tokens.nextToken();
+      		String second  = tokens.nextToken();
+          System.out.println(" "+second+" "+first);
       		context.write(new Text(second),new Text(first+" R"));
       	}
       } else {
@@ -46,9 +46,9 @@ public class FileJoin {
                     //  String [] list = tokens.nextToken().split(" ");
                     //  Context temp = new Context();
                     //  temp.write(list[0],"r");
-		    String first = tokens.nextToken();
-		    String second = tokens.nextToken();
-        System.out.println(" "+second+" "+first);
+            		    String first = tokens.nextToken();
+            		    String second = tokens.nextToken();
+                    System.out.println(" "+second+" "+first);
                      context.write(new Text(first),new Text(second+" S"));
               }
       }

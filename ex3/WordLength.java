@@ -29,7 +29,7 @@ public class WordLength {
 	
 
 	//System.out.println(word.toString().lengot());
-	length.set(word.toString().length());
+	      length.set(word.toString().length());
         context.write(length,word);
       }
     }
@@ -47,11 +47,11 @@ public class WordLength {
 
       for (Text txt : values) {
 	//        result += txt.toString()+" ";
-	list.add(txt.toString());
+	       list.add(txt.toString());
       }
       Collections.sort(list);
       for(String s : list){
-	result += s+" ";	
+	       result += s+" ";	
       }
       
       context.write(key, new Text(result));
